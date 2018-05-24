@@ -1,0 +1,52 @@
+{
+  "name": "mono-utils",
+  "version": "1.0.0",
+  "description": "Node.js utils to deal with async/await",
+  "main": "lib/",
+  "files": [
+    "lib"
+  ],
+  "nyc": {
+    "include": [
+      "lib/"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "lint": "eslint lib/ test/",
+    "test": "npm run lint && npm run t",
+    "t": "nyc ava --verbose --serial ---fail-fast test/ && nyc report --reporter=html",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "preversion": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mono-js/mono-utils.git"
+  },
+  "contributors": [
+    {
+      "name": "Sebastien Chopin (@Atinux)"
+    },
+    {
+      "name": "Benjamin Canac (@benjamincanac)"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "0.25.0",
+    "codecov": "3.0.2",
+    "eslint": "4.19.1",
+    "nyc": "11.7.3"
+  },
+  "keywords": [
+    "mono",
+    "async await",
+    "async utils",
+    "mono utils",
+    "utils",
+    "await utils",
+    "tools"
+  ]
+}
