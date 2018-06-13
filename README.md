@@ -169,3 +169,7 @@ We developed other utils that you might find useful:
 - [mongodb-utils](https://github.com/mono-js/mongodb-utils)
 - [elasticsearch-utils](https://github.com/mono-js/elasticsearch-utils)
 - [mono-test-utils](https://github.com/mono-js/mono-test-utils)
+
+## LICENSE
+
+[MIT](https://github.com/mono-js/mono-utils/blob/master/LICENSE)
